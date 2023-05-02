@@ -58,7 +58,7 @@ export default function App() {
   };
 
   const removeContact = (contactId: string) => {
-    setContacts(contacts.filter(({ id }) => id !== contactId));
+    setContacts(contacts => contacts.filter(({ id }) => id !== contactId));
   };
 
   const getVisibleContacts = () => {
